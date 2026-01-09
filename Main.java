@@ -18,7 +18,12 @@ public class Main {
         nicolas.displayHappyBirthday();
 
         Admin egg = new Admin("egg", 1999, 3, 7);
+        egg.displayInfo(true);
         egg.displayHappyBirthday();
+
+        Admin f = new Admin("f", 1999, 1, 9);
+        f.displayInfo(true);
+        f.displayHappyBirthday();
 
     }
 }

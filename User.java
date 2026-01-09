@@ -26,7 +26,10 @@ public class User {
         this.dob = dob;
     }
     public boolean isBirthday(){
-        return true;
+        if(LocalDate.now().getMonth() == this.dob.getMonth() && LocalDate.now().getDayOfMonth() == this.dob.getDayOfMonth()){
+            return true;
+        }
+            return false;
     }
     public void displayHappyBirthday() {
         if(isBirthday())
